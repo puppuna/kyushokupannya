@@ -159,16 +159,18 @@ header h1 {
   display: flex;
   gap: 16px;
   justify-content: center;
+  align-items: center;
   width: 350px;
-  max-width: 400px;
-  margin: 20px auto 0;
-  border-bottom: 1px dashed brown;
+  /* max-width: 60%; */
+  margin: 10px auto 0;
+  border-bottom: 1px dashed #c0b0b0;
 }
 
 .newsText {
   flex: 1;
   width: 300px;
   font-family: sans-serif;
+  margin-bottom: 10px;
 }
 
 .newsText h4 {
@@ -177,7 +179,7 @@ header h1 {
 
 .newsText time {
   font-size: 12px;
-  color: brown;
+  color: rgb(141, 109, 109);
 }
 
 .newsText p {
@@ -351,7 +353,7 @@ small {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     max-width: 60%;
    }
 
@@ -362,7 +364,8 @@ small {
    }
 
    .newsItem {
-    width: 600px;
+    width: 550px; 
+    gap: 30px;
    }
 
    .acssesItem {
