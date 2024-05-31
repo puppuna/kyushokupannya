@@ -21,17 +21,32 @@
 
   <header>
     <!-- ヘッダー -->
-    <div class="container">
+    <nav class="gNav">
       <h1 class="sp-logo">
         <img
           src="https://user-images.githubusercontent.com/102784267/233595864-a9149c3d-c29a-45d1-94a8-8f7558ec8cdc.png"
-          height="40" alt="給食パン屋">
+          height="45" alt="給食パン屋">
       </h1>
       <h1 class="pc-logo">
         <img
           src="https://user-images.githubusercontent.com/102784267/233595856-c124accc-571b-4490-ae97-090d07d8f737.png"
-          height="40" alt="給食パン屋">
+          height="45" alt="給食パン屋">
       </h1>
+        <ul>
+          <li>
+            <a class="gNavlink" href="#1">Menu</a>
+          </li>
+          <li>
+            <a class="gNavlink" href="#2">News</a>
+          </li>
+          <li>
+            <a class="gNavlink" href="#3">Shop</a>
+          </li>
+          <li>
+            <a class="gNavlink" href="#4">Contact</a>
+          </li>
+        </ul>
+       </nav>
     </div>
     <!-- ロゴ画像を必ず含めてください -->
   </header>
@@ -46,8 +61,21 @@
     </div>
     <img class="heroImg" src="https://user-images.githubusercontent.com/102784267/233591847-5ec41f51-90be-4d7a-b3b9-790bc110638b.png" alt="" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="1200">
   </section>
+  
+  <section class="pc-hero">
+    <!-- ヒーローエリア -->
+    <!-- キャッチコピーを必ず含めてください -->
+    <!-- 背景に画像を配置してください -->
+    <div class="heroInner">
+      <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">あの時の<br>おいしさを<br>いつでも
+      </h2>
+    </div>
+    <img class="heroImg" src="https://user-images.githubusercontent.com/102784267/233591847-5ec41f51-90be-4d7a-b3b9-790bc110638b.png" alt="" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="1200">
+  </section>
 
-  <section class="pan">
+
+
+  <section class="pan" id="1">
     <!-- 商品紹介 後日実装 -->
     <div class="container">
       <h3 class="itemList">
@@ -114,7 +142,7 @@
     </div>
   </section>
 
-  <section class="news">
+  <section class="news" id="2">
     <!-- お知らせ 後日実装 -->
     <div class="container">
       <h3 class="newsTitle">
@@ -168,7 +196,7 @@
     </div>
   </section>
 
-  <section class="acsses">
+  <section class="acsses" id="3">
     <!-- 店舗情報 後日実装 -->
     <div class="container">
       <h3 class="acssesTitle">
@@ -191,7 +219,7 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section class="contact" id="4">
     <div class="container">
       <h3 class="contactTitle">
         <img
@@ -226,9 +254,15 @@
   <footer>
     <!-- フッター -->
     <!-- (c) 256times.com を必ず含めてください -->
-    <a href="#"><i class="bi bi-instagram"></i></a>
-    <a href="#"><i class="bi bi-twitter"></i></a>
-    <br><br>
+    <div class="footerItem">
+      <img
+      src="https://user-images.githubusercontent.com/102784267/233595856-c124accc-571b-4490-ae97-090d07d8f737.png"
+      height="30" alt="給食パン屋">
+      <div class="sns">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
     <small>(c) 256times.com</small>
   </footer>
 

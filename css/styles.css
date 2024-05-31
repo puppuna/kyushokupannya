@@ -7,7 +7,6 @@
 
 HTML,
 body,
-h1,
 h2,
 h3,
 h4
@@ -17,6 +16,8 @@ h4
   font-family: "Kaisei Opti", serif;
   color: #444;
 }
+
+html { scroll-behavior: smooth;}
 
 p {
   font-family: sans-serif;
@@ -38,16 +39,61 @@ a {
 
 /* header */
 header {
-  padding: 10px 0;
   background: rgba(67, 47, 38, 0.8);
-  align-items: center;
   position: fixed;
   width: 100%;
-  /* border-bottom: 4px solid #703a25; */
+  height: 70px;
+  justify-content: center;
+
 }
 
-header h1 {
-  font-size: 0;
+.gNav {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sp-logo,.pc-logo {
+  width: auto;
+}
+
+.gNav ul {
+  list-style: none;
+}
+
+.gNav li {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.gNavlink {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 18px;
+  font-size: 18px;
+
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+
+.gNavlink::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #bdaa9d;
+  transition: .2s;
+  transform: translateX(-50%);
+}
+
+.gNavlink:hover::after{
+  width: 100%;
 }
 
 .pc-logo {
@@ -55,7 +101,7 @@ header h1 {
 }
 
 .hero {
-  background: url(https://user-images.githubusercontent.com/102784267/233598836-5aff188d-1c15-4721-8fd3-36d671527a45.png) no-repeat center;
+  background: url(https://user-images.githubusercontent.com/102784267/233598576-7e0246e9-3287-419a-b3aa-f0ad3465ae4d.png) no-repeat center;
   height: 600px;
   max-width: 100%;
   background-size: cover;
@@ -79,16 +125,20 @@ header h1 {
   /* display: none; */
 }
 
+.pc-hero{
+  display: none;
+}
+
 /* pan */
 .pan {
   margin: 0;
-  background-color: #fff5d8; 
+  background-color: #f5efda; 
   padding-bottom: 20px;
 }
 
 .itemList {
   margin: 0;
-  padding-top: 50px;
+  padding-top: 70px;
   font-size: 30px;
   text-align: center;
 }
@@ -96,7 +146,7 @@ header h1 {
 .itemListText {
   text-align: center;
   font-size: 16px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .items {
@@ -113,6 +163,7 @@ header h1 {
   padding: 20px 20px 10px;
   text-align: center;
   box-shadow: #decab9 0 0 9px;
+  height: 320px;
 }
 
 .itemImg {
@@ -133,7 +184,7 @@ header h1 {
 }
 
 .itemText {
-  padding-top: 0;
+  margin-top: 10px;
   font-size: 16px;
   text-align: left;
   line-height: 1.6;
@@ -142,7 +193,7 @@ header h1 {
 /* news  */
 .news {
   margin: 0;
-  background: linear-gradient(#fff5d8,#fff);
+  background: linear-gradient(#f5efda,#fff);
   width: 100%;
 }
 
@@ -151,7 +202,7 @@ header h1 {
 }
 
 .newsTitle {
-  padding-top: 50px;
+  padding-top: 70px;
   font-size: 30px;
   text-align: center;
 }
@@ -161,7 +212,7 @@ header h1 {
   gap: 16px;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 330px;
   /* max-width: 60%; */
   margin: 10px auto 0;
   border-bottom: 1px dashed #c0b0b0;
@@ -214,7 +265,7 @@ header h1 {
 }
 
 .acssesTitle {
-  padding-top: 50px;
+  padding-top: 70px;
   font-size: 30px;
   color: #fff;
   text-align: center;
@@ -253,7 +304,7 @@ header h1 {
 
 .contactTitle {
   font-size: 30px;
-  padding-top: 50px;
+  padding-top: 70px;
   text-align: center;
 }
 
@@ -293,6 +344,7 @@ form input {
   border: none;
   border-radius: 5px;
   margin: 8px 0 50px;
+  line-height: 1.6;
 }
 
 .submit:hover {
@@ -304,10 +356,18 @@ form input {
 
 footer {
   margin: 0;
-  padding: 40px 0;
+  padding: 50px 0 18px;
   text-align: center;
   background: #2f4f4f;
 }
+
+.footerItem {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 40px;
+} 
 
 i {
   font-size: 24px;
@@ -333,12 +393,21 @@ small {
     display: inline;
    }
    /* hero */
-   .hero {
+
+  .hero {
+    display: none;
+  } 
+
+   .pc-hero {
+    background: url(https://user-images.githubusercontent.com/102784267/233598836-5aff188d-1c15-4721-8fd3-36d671527a45.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
     height: 450px;
     display: flex;
     gap: 60px;
     flex-direction: row-reverse;
     text-align: left;
+    justify-content: center;
    }
 
    .heroImg {
@@ -358,13 +427,15 @@ small {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 60%;
+    max-width: 70%;
    }
 
    .item {
      flex: 1;
      display: block;
-     max-width: 400px;
+     max-width: 340px;
+     min-width: 280px;
+     height: 340px;
    }
 
    .newsItem {
