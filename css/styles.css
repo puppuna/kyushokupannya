@@ -56,26 +56,27 @@ header h1 {
 
 .hero {
   background: url(https://user-images.githubusercontent.com/102784267/233598836-5aff188d-1c15-4721-8fd3-36d671527a45.png) no-repeat center;
-  height: 550px;
+  height: 600px;
   max-width: 100%;
   background-size: cover;
-  text-align: left;
-  display: flex;
+  text-align: center;
+  /* display: flex; */
   justify-content: center;
-}
-
-.heroImg {
-  padding: 200px 20px 0;
-  height: 150px;
-  width: 150px;
 }
 
 .heroInner h2 {
   color: #fff;
   font-weight: normal;
-  font-size: 45px;
-  padding: 140px 10px 0;
+  font-size: 50px;
+  padding-top: 100px;
   text-shadow: #292a36 1px 0 9px;
+}
+
+.heroImg {
+  margin-top: 30px;
+  height: 200px;
+  width: 200px;
+  /* display: none; */
 }
 
 /* pan */
@@ -333,18 +334,21 @@ small {
    }
    /* hero */
    .hero {
-    gap: 30px;
+    height: 450px;
+    display: flex;
+    gap: 60px;
+    flex-direction: row-reverse;
+    text-align: left;
    }
 
-
    .heroImg {
-    padding-top: 180px;
-    height: 250px;
-    width: 250px;
+    margin-top: 120px;
+    height: 300px;
+    width: 300px;
   }  
 
    .heroInner h2 {
-    font-size: 60px;
+    font-size: 65px;
     padding-top: 100px;
    }
 
@@ -370,9 +374,9 @@ small {
 
    .acssesItem {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
-    max-width: 600px;
+    max-width: 60%;
    }
 
    .acssesText {
