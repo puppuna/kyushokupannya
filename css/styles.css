@@ -72,8 +72,8 @@ header {
 .gNavlink {
   text-decoration: none;
   color: #fff;
-  margin-left: 18px;
-  font-size: 18px;
+  margin-left: 16px;
+  font-size: 14px;
 
   position: relative;
   display: inline-block;
@@ -163,7 +163,7 @@ header {
   padding: 20px 20px 10px;
   text-align: center;
   box-shadow: #decab9 0 0 9px;
-  height: 320px;
+  height: 350px;
 }
 
 .itemImg {
@@ -278,6 +278,11 @@ header {
   padding-bottom: 50px;
 }
 
+.map {
+  width: 80%;
+  height: 80%;
+}
+
 .acssesText {
   margin: 16px auto;
   /* text-align: left; */
@@ -291,6 +296,7 @@ header {
 
 .acssesText p {
   margin-top: 8px;
+  line-height: 1.8;
 }
 
 
@@ -299,7 +305,6 @@ header {
 .contact {
   background: #fff;
   width: 100%;
-  margin: 0 auto;
 }
 
 .contactTitle {
@@ -314,7 +319,7 @@ header {
 
 form {
   margin: 0 auto;
-  width: 320px;
+  width: 340px;
   /* min-width: 300px; */
   font-size: 14px;
   font-family: sans-serif;
@@ -449,6 +454,11 @@ small {
     justify-content: center;
     max-width: 60%;
    }
+
+   .map {
+    width: 360px;
+    height: 280px;
+  }
 
    .acssesText {
     flex: 1;
