@@ -56,7 +56,7 @@ header h1 {
 
 .hero {
   background: url(https://user-images.githubusercontent.com/102784267/233598836-5aff188d-1c15-4721-8fd3-36d671527a45.png) no-repeat center;
-  height: 500px;
+  height: 550px;
   max-width: 100%;
   background-size: cover;
   text-align: left;
@@ -66,8 +66,8 @@ header h1 {
 
 .heroImg {
   padding: 200px 20px 0;
-  height: 180px;
-  width: 180px;
+  height: 150px;
+  width: 150px;
 }
 
 .heroInner h2 {
@@ -159,7 +159,8 @@ header h1 {
   display: flex;
   gap: 16px;
   justify-content: center;
-  width: 400px;
+  width: 350px;
+  max-width: 400px;
   margin: 20px auto 0;
   border-bottom: 1px dashed brown;
 }
@@ -259,7 +260,7 @@ header h1 {
 
 form {
   margin: 0 auto;
-  max-width: 360px;
+  width: 320px;
   /* min-width: 300px; */
   font-size: 14px;
   font-family: sans-serif;
@@ -283,7 +284,7 @@ form input {
 }
 
 .submit {
-  padding: 3px 50px;
+  padding: 8px 50px;
   background-color: #a8a8a8;
   color: #fff;
   border: none;
